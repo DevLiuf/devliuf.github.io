@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBoo 개인정보처리방침</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+            background-color: #FFF8F0;
+            color: #37474F;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px 30px;
+            border-bottom: 3px solid #FF8A65;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #FF8A65;
+            margin-bottom: 10px;
+        }
+        
+        .effective-date {
+            font-size: 14px;
+            color: #999;
+            margin-top: 10px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #FF8A65;
+            margin-bottom: 30px;
+            margin-top: 40px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: #FF8A65;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-left: 4px solid #FF8A65;
+            padding-left: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        strong {
+            color: #FF8A65;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #FFAB91;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .contact {
+            margin-top: 15px;
+            color: #FF8A65;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 30px 15px 20px;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">MyBoo</div>
+            <p style="font-size: 16px; color: #37474F; margin-top: 5px;">AI 연인 케어 비서</p>
+            <div class="effective-date">시행일: 2026년 2월 22일</div>
+        </header>
+        
+        <main>
+            <h1>개인정보처리방침</h1>
+            
+            <div class="section">
+                <h2>§1. 수집하는 개인정보 항목</h2>
+                <ul>
+                    <li><strong>필수 정보:</strong> 이메일, 소셜 로그인 ID (Google), 기기 식별자 (FCM 토큰)</li>
+                    <li><strong>선택 정보:</strong> 연인 프로필 (이름, 생일, MBTI, 혈액형, 선호도, 사이즈), AI 편지 대화 내역</li>
+                    <li><strong>민감정보 (별도 동의):</strong> 생리주기 데이터 (AES-256 암호화 저장)</li>
+                    <li><strong>자동수집 정보:</strong> 앱 사용 통계 (Firebase Analytics), 오류 로그 (Firebase Crashlytics), 광고 식별자 (ATT 동의 시)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>§2. 수집 목적</h2>
+                <ul>
+                    <li>AI 맞춤 편지 작성 (Claude API)</li>
+                    <li>기념일/생리주기 로컬 알림 및 FCM 푸시 알림</li>
+                    <li>서비스 개선 및 사용 통계 분석</li>
+                    <li>맞춤형 광고 표시 (무료 사용자)</li>
+                    <li>오류 감지 및 서비스 안정성 확보</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>§3. 보관 기간 및 파기</h2>
+                <ul>
+                    <li>회원 탈퇴 시 즉시 삭제</li>
+                    <li>AI 편지 대화 내역: 회원 탈퇴 시 삭제</li>
+                    <li>관련 법령에 따른 보관 (전자상거래법 등)</li>
+                    <li>Crashlytics 오류 로그: 90일 후 자동 삭제</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>§4. 제3자 제공</h2>
+                <ul>
+                    <li><strong>Firebase (Google):</strong> 인증, 데이터 저장, 푸시 알림, 사용 통계, 오류 추적</li>
+                    <li><strong>Claude AI (Anthropic):</strong> AI 편지 생성 (Cloud Functions 프록시 경유, API 키 미노출)</li>
+                    <li><strong>AdMob (Google):</strong> 광고 표시 (프리미엄 사용자 제외)</li>
+                    <li><strong>RevenueCat:</strong> 구독 결제 관리 (구매 영수증 검증, 구독 상태 동기화)</li>
+                    <li><strong>Coupang Partners (쿠팡):</strong> 선물샵 제휴 링크 제공 (구매 시 수수료 수익 발생)</li>
+                    <li><strong>App Tracking Transparency:</strong> iOS 사용자 동의 시 광고 식별자 수집</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>§5. 이용자 권리</h2>
+                <ul>
+                    <li>개인정보 열람, 수정, 삭제 요청</li>
+                    <li>마케팅 동의 철회</li>
+                    <li>계정 삭제 (설정 > 계정 삭제)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>§6. 민감정보 처리</h2>
+                <ul>
+                    <li>생리주기 데이터는 AES-256 암호화</li>
+                    <li>기기 내 Secure Storage에 암호화 키 보관</li>
+                    <li>별도 동의 없이 수집하지 않음</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>§7. 앱 추적 투명성 (ATT)</h2>
+                <ul>
+                    <li>iOS 14.5 이상 기기에서 앱 추적 권한 요청</li>
+                    <li>거부 시에도 서비스 이용에 제한 없음</li>
+                    <li>동의 시 맞춤형 광고 제공에 활용</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>§8. 연락처</h2>
+                <ul>
+                    <li><strong>개인정보보호 책임자:</strong> MyBoo Team</li>
+                    <li><strong>이메일:</strong> molldo2025@gmail.com</li>
+                </ul>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2026 MyBoo. All rights reserved.</p>
+            <p class="contact">문의: molldo2025@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
