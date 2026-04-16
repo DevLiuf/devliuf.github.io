@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiny Speech 개인정보 처리방침</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      background: #f4f8fb;
+      color: #1e2a34;
+      line-height: 1.8;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 4px 22px rgba(0,0,0,0.08);
+    }
+    h1 { margin-top: 0; color: #0e1a24; }
+    h2 { margin-top: 26px; color: #1a3142; }
+    ul { padding-left: 20px; }
+    a { color: #0f8a74; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <h1>개인정보 처리방침</h1>
+      <p><strong>시행일:</strong> 2026-04-16</p>
+      <p>Tiny Speech(이하 "앱")은 이용자의 개인정보를 중요하게 생각하며, 관련 법령을 준수합니다.</p>
+
+      <h2>1. 개인정보처리자 정보</h2>
+      <ul>
+        <li>개발사: molldo</li>
+        <li>문의 이메일: <a href="mailto:molldo2025@gmail.com">molldo2025@gmail.com</a></li>
+      </ul>
+
+      <h2>2. 수집 및 처리 정보</h2>
+      <ul>
+        <li>이용자가 앱에 직접 입력한 Gemini API 키</li>
+        <li>학습 데이터(대화 내용, 변환 결과, 핵심 표현)</li>
+        <li>앱 동작에 필요한 설정값</li>
+      </ul>
+
+      <h2>3. API 키 처리 방식</h2>
+      <ul>
+        <li>Gemini API 키는 <strong>이용자 디바이스 로컬 저장소(SharedPreferences)에만 저장</strong>됩니다.</li>
+        <li>해당 API 키는 <strong>앱 운영 서버로 전송되거나 별도 수집/보관되지 않습니다.</strong></li>
+        <li>외부 API 호출은 이용자 디바이스에서 Google API로 직접 이루어집니다.</li>
+        <li>이용자는 앱 설정에서 API 키를 언제든지 변경 또는 삭제할 수 있습니다.</li>
+      </ul>
+
+      <h2>4. 학습 데이터 저장</h2>
+      <ul>
+        <li>학습 데이터는 이용자 디바이스 로컬 저장소(Hive)에 저장됩니다.</li>
+        <li>앱은 별도 서버 DB를 통한 학습 데이터 저장을 기본 제공하지 않습니다.</li>
+      </ul>
+
+      <h2>5. 제3자 제공 및 처리위탁</h2>
+      <p>앱은 API 키와 학습 데이터를 앱 서버에서 수집하지 않으며, 해당 데이터에 대한 별도 판매/대여/제공을 하지 않습니다.</p>
+      <p>단, 이용자 디바이스에서 Google API를 호출하는 과정에는 Google의 정책이 적용됩니다.</p>
+
+      <h2>6. 광고</h2>
+      <p>앱은 Google AdMob 광고를 포함할 수 있으며, 광고 SDK 처리에는 Google 정책이 적용됩니다.</p>
+
+      <h2>7. 이용자 권리</h2>
+      <ul>
+        <li>API 키 변경 또는 삭제</li>
+        <li>학습 데이터 삭제</li>
+        <li>앱 삭제를 통한 로컬 데이터 제거</li>
+      </ul>
+
+      <h2>8. 방침 변경</h2>
+      <p>본 방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 앱 또는 배포 페이지를 통해 고지합니다.</p>
+
+      <p><a href="/tiny-speech.html">Tiny Speech 페이지로 돌아가기</a></p>
+    </article>
+  </main>
+</body>
+</html>
